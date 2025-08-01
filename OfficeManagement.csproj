@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E40168F-C7DC-4D81-A5B6-E46374F8FA10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OfficeManagement</RootNamespace>
+    <AssemblyName>OfficeManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addemp.Designer.cs">
+      <DependentUpon>addemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="deleteEMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteEMP.Designer.cs">
+      <DependentUpon>deleteEMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empType.cs" />
+    <Compile Include="empUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empUpdate.Designer.cs">
+      <DependentUpon>empUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialReports.Designer.cs">
+      <DependentUpon>FinancialReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="investor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="investor.Designer.cs">
+      <DependentUpon>investor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="investorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="investorUpdate.Designer.cs">
+      <DependentUpon>investorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mngemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mngemp.Designer.cs">
+      <DependentUpon>mngemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addemp.resx">
+      <DependentUpon>addemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteEMP.resx">
+      <DependentUpon>deleteEMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empUpdate.resx">
+      <DependentUpon>empUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialReports.resx">
+      <DependentUpon>FinancialReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="investor.resx">
+      <DependentUpon>investor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="investorUpdate.resx">
+      <DependentUpon>investorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mngemp.resx">
+      <DependentUpon>mngemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FinalDBDataSet.xsc">
+      <DependentUpon>FinalDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalDBDataSet.xss">
+      <DependentUpon>FinalDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet1.xsc">
+      <DependentUpon>FinalDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalDBDataSet1.xss">
+      <DependentUpon>FinalDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet2.xsc">
+      <DependentUpon>FinalDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalDBDataSet2.xss">
+      <DependentUpon>FinalDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet3.xsc">
+      <DependentUpon>FinalDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalDBDataSet3.xss">
+      <DependentUpon>FinalDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet4.xsc">
+      <DependentUpon>FinalDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalDBDataSet4.xss">
+      <DependentUpon>FinalDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet5.xsc">
+      <DependentUpon>FinalDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalDBDataSet5.xss">
+      <DependentUpon>FinalDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\421648.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-avatar-user-profile-avatar-heroes-black-hair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-round-flat-male-portrait-avatar-user-icon-png-11639648873oplfof4loj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header-vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\524-5247086_absence-management-system-office-worker-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand-square.256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail_icon-icons.com_62758.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\223122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-already-a-proact-user-employee-icon-white-white-employee-icon-text-stencil-symbol-alphabet-transparent-png-2676548.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78-786207_user-avatar-png-user-avatar-icon-png-transparent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-avatar-user-profile-avatar-heroes-black-hair1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-search-icon-666-thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-2913.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analysis-691.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skill-8806.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-5032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team-management-9842.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-671.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header-vector1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HWR logo by Yasin.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
